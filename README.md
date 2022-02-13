@@ -32,7 +32,7 @@ The bot player does not know about the user's positon unless it looks and the us
 4. The bot does not know the user's position so it peforms **"random"** moves. It will start moving 3 N, then 3 E, then 3 S, then 3 W, ie moves in a square. Once it completes the square it looks. If it sees the user proceed to Step 2, otherwise repeat Step 4 but instead of a 3x3 square it moves by a 4x4 square, which **increments** (5x5 6x6 7x7 ...) until he sees the user.
 
 ### Technincal Information
-This was developed using [IntelliJ Idea](https://www.jetbrains.com/idea/). It mainly uses java File API to handle reading maps from a directory.
+This was developed using [IntelliJ Idea](https://www.jetbrains.com/idea/). It mainly uses **Java File API** to handle reading maps from a directory.
 
 ### Known Issues/Limitations
 I had some constraints when developing this program. I was given a template for each class that included a couple of methods that were not implemented and these **methods' signatures** could not be changed. This is why my code for Map.java includes so many **type conversions** to handle the return types of these methods.
