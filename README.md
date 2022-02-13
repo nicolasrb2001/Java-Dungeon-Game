@@ -10,7 +10,7 @@ The main requisite for completing on of my coursework was implementing the minig
 - There is a **bot player** that attempts to catch the user. If the user is caught they lose the game
 - Maps created by the user can have any size and shape, they are stored in a MxN array where M is the max nº of rows and N the max nº of columns.
 ### Game Instructions
-The user is prompted to choose one of the default maps or they can enter their own ones.
+The user is prompted to choose one of the default maps in [Examplemaps](/Examplemaps) or they can enter their own ones.
 The user can perform the following commands:
 - **Hello** tells the user how much gold is required to win.
 - **Move X** where X is direction, ie N for north, S, E, W. Tiles with a '#' are walls and the user cannot move into a wall tile.
