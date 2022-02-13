@@ -6,9 +6,9 @@ This is a dungeon minigame in which the user can move around a map collecting go
 The main requisite for completing on of my coursework was implementing the minigame, however; I was eager to attempt the additional challenges.
 
 ### Features
-- The user can choose to play the maps that they have created by entering their file path.
+- The user can choose to play the maps that they have created by entering their **file path**.
 - There is a **bot player** that attempts to catch the user. If the user is caught they lose the game
-- Maps created by the user can have any size and shape, they are stored in a MxN array where M is the max nº of rows and N the max nº of columns.
+- Maps created by the user can have any size and shape, they are stored in a **MxN** array where M is the max nº of rows and N the max nº of columns.
 ### Game Instructions
 The user is prompted to choose one of the default maps in [Examplemaps](/Examplemaps) or they can enter their own ones.
 The user can perform the following commands:
