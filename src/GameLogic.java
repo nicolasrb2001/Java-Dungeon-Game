@@ -261,19 +261,6 @@ public class GameLogic {
                 System.out.print("\n");
             }
         }
-        System.out.print("\n");
-        if (turn == 1){
-            for (char[] chars : position) {
-                for (char aChar : chars) {
-                    System.out.print(aChar);
-                }
-                System.out.print("\n");
-            }
-        }
-
-
-
-
     }
 
     /**
