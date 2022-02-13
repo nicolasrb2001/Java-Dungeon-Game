@@ -15,7 +15,7 @@ The user can perform the following commands:
 - **Hello** tells the user how much gold is required to win.
 - **Move X** where X is direction, ie N for north, S, E, W. Tiles with a '#' are walls and the user cannot move into a wall tile.
 - **Look**, the program outputs a **5x5 array** (see screenshots) with the player at its centre and the players surroundings. The tile the user is at is shown as a 'P' and the bot as a 'B'.
-- **Pickup**, if the user is at a gold tile, he collects the gold.
+- **Pickup**, if the user is at a gold tile 'G', he collects the gold. 'G' tile becomes an empty tile '.' (the map in memory is updated).
 - **Gold**, shows gold currently owned.
 - **Exit**, if the user is at an exit tile 'E' and has the gold required to win, they win the game and exit the program. If the user is not at an exit tile or they do not have enough gold, they lose the game and the program closes.
 
