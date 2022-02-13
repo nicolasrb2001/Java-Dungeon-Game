@@ -23,12 +23,19 @@ The **bot player** can perform the following actions:
 - **Look**
 
 The bot player does not know about the user's positon unless it looks and the user is within the 5x5 array centered at the bot.
-### Bot PLayer Description
+### Bot Player Description
 
 1. During the first turn, the bot will always **look first** before moving. If it sees the user proceed to Step 2, otherwise Step 4
 2. It will perform move actions depending on which one gets it **closer** to the user. 
 3. It performs 2 moves in total before it **"forgets"** the user's previous position. This is because the user could have moved after the bot looked and hence their positon changed. Since it does not longer know the user's position it **looks again**. If it sees the user repeat Step 2.
 4. The bot does not know the user's position so it peforms **"random"** moves. It will start moving 3 N, then 3 E, then 3 S, then 3 W, ie moves in a square. Once it completes the square it looks. If it sees the user proceed to Step 2, otherwise repeat Step 4 but instead of a 3x3 square it moves by a 4x4 square, which **increments** (5x5 6x6 7x7 ...) until he sees the user.
 
+### Technincal Information
+This was developed using [IntelliJ Idea](https://www.jetbrains.com/idea/). It mainly uses java File API to handle reading maps from a directory.
+
 ### Known Issues/Limitations
-I had some constraints when developing this programm. I was given a template for each class that included a couple of methods that were not implemented and the methods' signatures could not be changed. This is why my code for Map.java includes so many type conversions to handle the return types of the methods.
+I had some constraints when developing this programm. I was given a template for each class that included a couple of methods that were not implemented and these **methods' signatures** could not be changed. This is why my code for Map.java includes so many **type conversions** to handle the return types of these methods.
+
+The **bot player AI** is not very sophisticated but it is **very unlikely** that it gets stuck between walls as eventually it can get past them (by performing x moves in a straight line)
+
+### Screenshots
