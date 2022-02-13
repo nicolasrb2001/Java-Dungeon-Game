@@ -12,10 +12,11 @@ The main requisite for completing on of my coursework was implementing the minig
 ### Game Instructions
 The user is prompted to choose one of the default maps or they can enter their own ones.
 The user can perform the following commands:
-- **Move X** where X is direction, ie N for north, S, E, W. 
+- **Hello** tells the user how much gold is required to win.
+- **Move X** where X is direction, ie N for north, S, E, W. Tiles with a '#' are walls and the user cannot move into a wall tile.
 - **Look**, the program outputs a **5x5 array** (see screenshots) with the player at its centre and the players surroundings. The tile the user is at is shown as a 'P' and the bot as a 'B'.
 - **Pickup**, if the user is at a gold tile, he collects the gold.
-- **Gold**, shows gold required to win.
+- **Gold**, shows gold currently owned.
 - **Exit**, if the user is at an exit tile 'E' and has the gold required to win, they win the game and exit the program. If the user is not at an exit tile or they do not have enough gold, they lose the game and the program closes.
 
 The **bot player** can perform the following actions:
@@ -34,8 +35,30 @@ The bot player does not know about the user's positon unless it looks and the us
 This was developed using [IntelliJ Idea](https://www.jetbrains.com/idea/). It mainly uses java File API to handle reading maps from a directory.
 
 ### Known Issues/Limitations
-I had some constraints when developing this programm. I was given a template for each class that included a couple of methods that were not implemented and these **methods' signatures** could not be changed. This is why my code for Map.java includes so many **type conversions** to handle the return types of these methods.
+I had some constraints when developing this program. I was given a template for each class that included a couple of methods that were not implemented and these **methods' signatures** could not be changed. This is why my code for Map.java includes so many **type conversions** to handle the return types of these methods.
 
 The **bot player AI** is not very sophisticated but it is **very unlikely** that it gets stuck between walls as eventually it can get past them (by performing x moves in a straight line)
 
 ### Screenshots
+
+The program loads the maps from the default directory and outputs the name of the maps inside each file ie Small Dungeon of Doom in small_example_map.txt.
+The user then uses the look command and the program outputs a 5x5 array centered at the user.
+
+![](/screenshots/screenshot1.png)
+
+Showcasing some of the other commands:
+
+![](/screenshots/screenshot2.png)
+
+Loading a map from a different directory by entering the file path.
+
+![](/screenshots/screenshot3.png)
+
+I have added (and then removed) code that shows the actions of the bot after the user's turn for showcasing purposes, as the user is not supposed to be aware of the bot actions. Here the bot looks and moves N.
+
+![](/screenshots/screenshot4.png)
+
+Finally, the bot catches the user, the user loses and the program closes.
+![](/screenshots/screenshot5.png)
+
+
