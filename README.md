@@ -54,7 +54,7 @@ Loading a map from a different directory by entering the file path.
 
 ![](/screenshots/screenshot3.png)
 
-I have added (and then removed) code that shows the actions of the bot after the user's turn for showcasing purposes, as the user is not supposed to be aware of the bot actions. Here the bot looks and moves N.
+I have added (and then removed) code that shows the actions of the bot after the user's turn for showcasing purposes, as the user is not supposed to be aware of the bot's actions. Here the bot looks and moves N.
 
 ![](/screenshots/screenshot4.png)
 
